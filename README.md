@@ -4,7 +4,7 @@ _Vertical resize support for div, textarea, iframe, etc._
 
 A problem with the resize feature of textarea and iframe is that it does not work in all
 browsers (especially Edge) and is often quite quirky. This small package allows you to 
-add vertical resize ability to just about anything.
+add vertical resize ability to just about anything. This package has no dependencies.
 
 ## Install
 
