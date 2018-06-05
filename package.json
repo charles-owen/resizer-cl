@@ -28,5 +28,9 @@
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charles-owen/resizer-cl.git"
+  }
 }
