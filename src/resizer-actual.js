@@ -1,5 +1,6 @@
 
 function ResizerActual(element, options) {
+    element.classList.add('resizer');
 
     if(options === undefined) {
         options = {};
