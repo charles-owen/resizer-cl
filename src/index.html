@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <style>
+    textarea {
+      width: 80%;
+      height: 25em;
+      min-height: 15em;
+      background-color: #f0fffb;
+    }
+
+    div.iframe {
+      position: relative;
+      width: 80%;
+      min-height: 5em;
+      height: 10em;
+      padding: 0;
+    }
+
+    iframe {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    div.iframe {
+      margin: 1em 0;
+    }
+
+
+    div.example {
+      width: 80%;
+      height: 20em;
+      min-height: 10em;
+      background-color: cyan;
+    }
+
+  </style>
+</head>
+<body>
+
+<p>This page demonstrates and tests the  Javascript class: Resizer that can be used to
+  resize divs, text boxes, and iframes vertically.</p>
+
+<form>
+  <p class="center"><textarea></textarea></p>
+  <p class="center"><textarea></textarea></p>
+</form>
+<div class="iframe"><iframe></iframe></div>
+<div class="example"></div>
+
+<script>
+    new Resizer('textarea', {
+      handle: 'bar',
+        grabSize: 10
+    });
+    new Resizer('.iframe', {
+        handle: '10px solid red'
+    });
+    new Resizer('div.example', {
+        grabSize: 10
+    });
+</script>
+
+
+</body>
+
+</html>
+
+
