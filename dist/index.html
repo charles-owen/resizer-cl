@@ -34,11 +34,16 @@
     }
 
 
-    div.example {
+    div.example, div.example2 {
       width: 80%;
-      height: 20em;
-      min-height: 10em;
+      height: 10em;
+      min-height: 5em;
       background-color: cyan;
+      margin: 1em 0;
+    }
+
+    div.example2 {
+      height: 5em;
     }
 
   </style>
@@ -54,6 +59,7 @@
 </form>
 <div class="iframe"><iframe></iframe></div>
 <div class="example"></div>
+<div id="ex2" class="example2"></div>
 
 <script>
     new Resizer('textarea', {
@@ -66,6 +72,10 @@
     new Resizer('div.example', {
         grabSize: 10
     });
+
+    var element = document.getElementById('ex2');
+    new Resizer(element);
+
 </script>
 
 
