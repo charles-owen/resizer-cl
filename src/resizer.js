@@ -9,11 +9,23 @@
 
 import ResizerActual from './resizer-actual.js';
 
+/**
+ * Constructor for a Resizer object
+ * @param sel Selector or DOM element
+ * @param options Options object.
+ * @constructor
+ */
 function Resizer(sel, options) {
-    var elements = document.querySelectorAll(sel);
-    for(var i=0; i<elements.length; i++) {
-        new ResizerActual(elements[i], options);
+    if(typeof sel === "string") {
+        var elements = document.querySelectorAll(sel);
+        for(var i=0; i<elements.length; i++) {
+            new ResizerActual(elements[i], options);
+        }
+    } else if(sel.nodeType) {
+        new ResizerActual(sel, options);
     }
+
+
 }
 
 export default Resizer;

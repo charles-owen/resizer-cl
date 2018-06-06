@@ -8,11 +8,24 @@ add vertical resize ability to just about anything. This package has no dependen
 
 ## Install
 
+### CDN
+
+Link directly to Resizer files on [unpkg](https://unpkg.com/).
+
+``` html
+<script src="https://unpkg.com/resizer-cl/dist/resizer.js"></script>
+<!-- or -->
+<script src="https://unpkg.com/resizer-cl/dist/resizer.min.js"></script>
+```
+
 ### Package managers
 
-[npm]
+[npm](https://www.npmjs.com/package/resizer-cl): `npm install resizer-cl --save`
 
 ## Initialize
+
+The node_modules/dist directory includes resizer.js and the minimized version resizer.min.js
+(recommended). 
 
 Most basic version. Resizer accepts a selector and will apply Resizer to all elements that
 match the selector.
@@ -32,6 +45,10 @@ textarea {
   background-color: #f0fffb;
 }
 ```
+
+Resizer will also accept a DOM element as the parameter. 
+
+### Using with iframe
 
 The recommended way to apply Resizer to an iframe is to actually apply it to a surrounding
 div. An iframe has special restrictions on mouse usage that can break Resizer if used directly.
