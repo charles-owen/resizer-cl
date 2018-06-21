@@ -8,6 +8,8 @@
  */
 
 import ResizerActual from './resizer-actual.js';
+import Options from './Options.js';
+
 
 /**
  * Constructor for a Resizer object
@@ -16,6 +18,8 @@ import ResizerActual from './resizer-actual.js';
  * @constructor
  */
 function Resizer(sel, options) {
+    options = new Options(options);
+
     if(typeof sel === "string") {
         var elements = document.querySelectorAll(sel);
         for(var i=0; i<elements.length; i++) {
@@ -24,8 +28,6 @@ function Resizer(sel, options) {
     } else if(sel.nodeType) {
         new ResizerActual(sel, options);
     }
-
-
 }
 
 export default Resizer;

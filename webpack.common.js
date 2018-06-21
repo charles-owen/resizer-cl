@@ -13,7 +13,14 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Resizer',
-            template: 'src/index.html',
+            filename: 'index.html',
+            template: 'src/html/index.html',
+            inject: 'head'
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Dialog',
+            filename: 'dialog.html',
+            template: 'src/html/dialog.html',
             inject: 'head'
         }),
         new webpack.NamedModulesPlugin(),

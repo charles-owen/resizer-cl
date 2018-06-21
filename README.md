@@ -89,7 +89,7 @@ new Resizer('.iframe');
 
 ## Options
 
-Resizer accepts an object with optiions:
+Resizer accepts an object with options:
 
 ```
 new Resizer('div.example', {
@@ -119,7 +119,7 @@ grab area that can be grabbed by the mouse.
 
 ## License
 
-Masonry is released under the MIT license. Have at it.
+Resizer is released under the MIT license.
 
 * * *
 

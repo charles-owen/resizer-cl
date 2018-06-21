@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <style>
+    div.dialog {
+      box-sizing: border-box;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      border: 1px solid #444444;
+      background-color: greenyellow;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 300px;
+      height: 400px;
+
+      min-width: 200px;
+      max-width: 600px;
+
+      min-height: 200px;
+      max-height: 600px;
+    }
+
+  </style>
+</head>
+<body>
+
+<p>This page demonstrates and tests the  Javascript class: Resizer that can be used to
+resize divs, text boxes, and iframes. This page specifically tests resizing of
+a box in two dimensions.</p>
+
+<div class="dialog"></div>
+
+<script>
+    new Resizer('.dialog', {
+        handle: 'none',
+        resize: 'both',
+        grabSize: 10
+    });
+
+</script>
+
+
+</body>
+
+</html>
+
+

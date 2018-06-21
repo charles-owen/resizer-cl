@@ -3,9 +3,10 @@
   "version": "2.2.2",
   "description": "Vertical resize support for div, textarea, iframe, etc.",
   "main": "dist/resizer.js",
+  "module": "srce/app-module-js",
   "private": false,
   "scripts": {
-    "build": "npx webpack --config webpack.dev.js",
+    "dev": "npx webpack --config webpack.dev.js",
     "prod": "npx webpack --config webpack.prod.js",
     "test": "karma start karma.conf.js",
     "serve": "webpack-dev-server --open --config webpack.dev.js"
