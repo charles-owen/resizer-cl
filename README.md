@@ -4,7 +4,7 @@ _Vertical resize support for div, textarea, iframe, etc._
 
 A problem with the resize feature of textarea and iframe is that it does not work in all
 browsers (especially Edge) and is often quite quirky. This small package allows you to 
-add vertical resize ability to just about anything. This package has no dependencies.
+add resize ability to just about anything. This package has no dependencies.
 
 ## Install
 
@@ -34,7 +34,8 @@ match the selector.
 new Resizer('textarea');
 ```
 
-Resizer uses the CSS min-height as a minimum size. Here is some example CSS for a textarea
+Resizer uses the CSS min-height, min-width, max-height, and max-width as absolute
+bounds on the size. Here is some example CSS for a textarea
 that works well with Resizer:
 
 ```
@@ -93,7 +94,8 @@ Resizer accepts an object with options:
 
 ```
 new Resizer('div.example', {
-    grabSize: 10
+    grabSize: 10,
+    resize: 'both',
     handle: 'bar'
 });
 ```
@@ -116,6 +118,9 @@ new Resizer('.iframe', {
 
 The `grabSize` option determines how many pixels from the bottom of the element comprise the
 grab area that can be grabbed by the mouse.
+
+The 'resize' option determines which dimensions are subject to resizing. The options are
+'vertical', 'horizontal', and 'both'.
 
 ## License
 
