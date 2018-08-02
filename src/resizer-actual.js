@@ -105,10 +105,7 @@ function ResizerActual(element, options) {
         // Ensure none currently exists
         removeMask();
 
-        var body = document.querySelector('body');
-        var tag = '<div style="position: ' +
-            'absolute; left: 0; right: 0; width: 100%; height: 100%;' +
-            'background-color: green;"></div>';
+        let body = document.querySelector('body');
         mask = document.createElement('div');
 
         mask.style.position = 'fixed';
