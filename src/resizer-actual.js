@@ -175,11 +175,11 @@ function ResizerActual(element, options) {
         }
 
         if((options.resize === 'both' || options.resize === 'vertical') && vert) {
-            return 'vertical;'
+            return 'vertical';
         }
 
         if((options.resize === 'both' || options.resize === 'horizontal') && horz) {
-            return 'horizontal;'
+            return 'horizontal';
         }
 
         return null;

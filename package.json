@@ -3,7 +3,7 @@
   "version": "2.3.0",
   "description": "Vertical resize support for div, textarea, iframe, etc.",
   "main": "dist/resizer.js",
-  "module": "srce/app-module-js",
+  "module": "src/app.modules.js",
   "private": false,
   "scripts": {
     "dev": "npx webpack --config webpack.dev.js",
