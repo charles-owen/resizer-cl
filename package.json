@@ -28,7 +28,9 @@
     "webpack": "^4.11.0",
     "webpack-cli": "^3.0.1",
     "webpack-dev-server": "^3.1.4",
-    "webpack-merge": "^4.1.2"
+    "webpack-merge": "^4.1.2",
+    "cryptiles": ">=4.1.2",
+    "url-parse": ">=1.4.3"
   },
   "dependencies": {},
   "repository": {
