@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="shortcut icon" href="img/favicon.ico" />
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-  <title>Resizer</title>
-  <style>
-    textarea {
+<!doctype html><html><head><link rel="shortcut icon" href="img/favicon.ico"/><meta http-equiv="Content-type" content="text/html; charset=utf-8"/><title>Resizer</title><style>textarea {
       width: 80%;
       height: 25em;
       min-height: 15em;
@@ -44,43 +37,17 @@
 
     div.example2 {
       height: 5em;
-    }
-
-  </style>
-<script type="text/javascript" src="resizer.js"></script></head>
-<body>
-
-<p>This page demonstrates and tests the  Javascript class: Resizer that can be used to
-  resize divs, text boxes, and iframes vertically.</p>
-
-<form>
-  <p class="center"><textarea></textarea></p>
-  <p class="center"><textarea></textarea></p>
-</form>
-<div class="iframe"><iframe></iframe></div>
-<div class="example"></div>
-<div id="ex2" class="example2"></div>
-
-<script>
-    new Resizer('textarea', {
+    }</style><script src="resizer.min.js"></script></head><body><p>This page demonstrates and tests the Javascript class: Resizer that can be used to resize divs, text boxes, and iframes vertically.</p><p>There is also a <a href="dialog.html">2D (dialog) test page</a>.</p><form><p class="center"><textarea></textarea></p><p class="center"><textarea></textarea></p></form><div class="iframe"><iframe></iframe></div><div class="example"></div><div id="ex2" class="example2"></div><script>new Resizer('textarea', {
       handle: 'bar',
-        grabSize: 10
+      grabSize: 10
     });
     new Resizer('.iframe', {
-        handle: '10px solid red'
+      handle: '10px solid red',
+      useMask: true
     });
     new Resizer('div.example', {
         grabSize: 10
     });
 
     var element = document.getElementById('ex2');
-    new Resizer(element);
-
-</script>
-
-
-</body>
-
-</html>
-
-
+    new Resizer(element);</script></body></html>

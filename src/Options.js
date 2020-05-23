@@ -7,7 +7,7 @@
  * @param options User provided options that override the default values.
  * @constructor
  */
-var Options = function(options) {
+export function Options(options) {
     options = options ? options : {};
 
     /// Options: vertical, horizontal, both
@@ -16,8 +16,14 @@ var Options = function(options) {
     /// The resizing handle
     this.handle = 'bar';
 
-    /// Range for grabing
+    /// Range for grabbing
     this.grabSize = 10;
+
+    /// Maximum speed we can resize in pixels per second
+    this.maxSpeed = 1000;
+
+    /// Use a mask (useful for iframes
+    this.useMask = true;
 
     for(var property in options) {
         if(options.hasOwnProperty(property)) {
@@ -30,6 +36,3 @@ var Options = function(options) {
 
 }
 
-
-
-export default Options;

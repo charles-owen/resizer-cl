@@ -5,10 +5,11 @@
  * browsers (especially Edge) and is often quite quirky. This small package allows you to
  * add vertical resize ability to just about anything.
  *
+ * @version 2.4.0 Added touch support. Limited speed of resizing to avoid issue when scrolling.
  */
 
-import ResizerActual from './resizer-actual.js';
-import Options from './Options.js';
+import {ResizerActual} from './resizer-actual';
+import {Options} from './Options';
 
 
 /**
@@ -17,7 +18,7 @@ import Options from './Options.js';
  * @param options Options object.
  * @constructor
  */
-function Resizer(sel, options) {
+export function Resizer(sel, options) {
     options = new Options(options);
 
     if(typeof sel === "string") {

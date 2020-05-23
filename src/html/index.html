@@ -52,6 +52,7 @@
 
 <p>This page demonstrates and tests the  Javascript class: Resizer that can be used to
   resize divs, text boxes, and iframes vertically.</p>
+<p>There is also a <a href="dialog.html">2D (dialog) test page</a>.</p>
 
 <form>
   <p class="center"><textarea></textarea></p>
@@ -64,10 +65,11 @@
 <script>
     new Resizer('textarea', {
       handle: 'bar',
-        grabSize: 10
+      grabSize: 10
     });
     new Resizer('.iframe', {
-        handle: '10px solid red'
+      handle: '10px solid red',
+      useMask: true
     });
     new Resizer('div.example', {
         grabSize: 10
