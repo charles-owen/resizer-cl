@@ -15,15 +15,16 @@ module.exports = {
             title: 'Resizer',
             filename: 'index.html',
             template: 'src/html/index.html',
-            inject: 'head'
+            inject: 'head',
+            scriptLoading: 'blocking'
         }),
         new HtmlWebpackPlugin({
             title: 'Dialog',
             filename: 'dialog.html',
             template: 'src/html/dialog.html',
-            inject: 'head'
+            inject: 'head',
+            scriptLoading: 'blocking'
         }),
-        new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ]
 };

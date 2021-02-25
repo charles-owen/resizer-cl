@@ -1,4 +1,4 @@
-const merge = require('webpack-merge');
+const {merge} = require('webpack-merge');
 const common = require('./webpack.common.js');
 const path = require('path');
 
@@ -9,7 +9,7 @@ module.exports = merge(common, {
         filename: 'resizer.js',
         path: path.resolve(__dirname, 'dist'),
         library: 'Resizer',
-        libraryTarget: 'umd',
+        libraryTarget: 'var',
         libraryExport: "default"
     },
 });
