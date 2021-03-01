@@ -16,26 +16,19 @@
   "author": "Charles B. Owen",
   "license": "MIT",
   "devDependencies": {
-    "elliptic": ">=6.5.3",
     "html-webpack-plugin": "^5.1.0",
-    "ini": ">=2.0.0",
     "jasmine-core": "^3.6.0",
     "karma": "^6.1.0",
     "karma-chrome-launcher": "^3.1.0",
     "karma-jasmine": "^4.0.1",
     "karma-sourcemap-loader": "^0.3.8",
     "karma-webpack": "^5.0.0",
-    "lodash": ">=4.17.19",
-    "node-forge": ">=0.10.0",
-    "serialize-javascript": ">=5.0.1",
-    "socket.io": ">=2.4.0",
     "terser-webpack-plugin": "^5.1.1",
     "url-parse": "^1.4.7",
     "webpack": "^5.21.1",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.7.3",
-    "websocket-extensions": ">=0.1.4"
+    "webpack-merge": "^5.7.3"
   },
   "dependencies": {},
   "repository": {
