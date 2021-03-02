@@ -3,13 +3,12 @@
   "version": "2.4.1",
   "description": "Vertical resize support for div, textarea, iframe, etc.",
   "main": "dist/resizer.js",
-  "module": "src/app.modules.js",
+  "module": "index.js",
   "private": false,
   "scripts": {
     "build:dev": "npx webpack --config webpack.dev.js",
     "build:prod": "npx webpack --config webpack.prod.js",
     "build:all": "npm run build:dev && npm run build:prod",
-    "test": "karma start karma.conf.js",
     "serve": "webpack serve --open --config webpack.dev.js"
   },
   "keywords": [],
@@ -17,20 +16,13 @@
   "license": "MIT",
   "devDependencies": {
     "html-webpack-plugin": "^5.1.0",
-    "jasmine-core": "^3.6.0",
-    "karma": "^6.1.0",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-jasmine": "^4.0.1",
-    "karma-sourcemap-loader": "^0.3.8",
-    "karma-webpack": "^5.0.0",
     "terser-webpack-plugin": "^5.1.1",
     "url-parse": "^1.4.7",
-    "webpack": "^5.21.1",
+    "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2",
+    "webpack-dev-server": "4.0.0-beta.0",
     "webpack-merge": "^5.7.3"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/charles-owen/resizer-cl.git"

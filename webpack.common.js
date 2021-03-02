@@ -4,10 +4,11 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        app: './src/app.modules.js'
+        app: './index.js'
     },
     devServer: {
-        contentBase: './dist',
+        static: path.resolve(__dirname, 'dist'),
+        host: 'localhost',
         hot: true
     },
     plugins: [

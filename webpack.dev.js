@@ -9,7 +9,7 @@ module.exports = merge(common, {
         filename: 'resizer.js',
         path: path.resolve(__dirname, 'dist'),
         library: 'Resizer',
-        libraryTarget: 'var',
+        libraryTarget: 'umd',
         libraryExport: "default"
-    },
+    }
 });

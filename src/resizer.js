@@ -18,7 +18,7 @@ import {Options} from './Options';
  * @param options Options object.
  * @constructor
  */
-export function Resizer(sel, options) {
+export const Resizer = function(sel, options) {
     options = new Options(options);
 
     if(typeof sel === "string") {

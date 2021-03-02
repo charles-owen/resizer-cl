@@ -37,7 +37,8 @@
 
     div.example2 {
       height: 5em;
-    }</style><script src="resizer.min.js"></script></head><body><p>This page demonstrates and tests the Javascript class: Resizer that can be used to resize divs, text boxes, and iframes vertically.</p><p>There is also a <a href="dialog.html">2D (dialog) test page</a>.</p><form><p class="center"><textarea></textarea></p><p class="center"><textarea></textarea></p></form><div class="iframe"><iframe></iframe></div><div class="example"></div><div id="ex2" class="example2"></div><script>new Resizer('textarea', {
+    }</style><script src="resizer.min.js"></script></head><body><p>This page demonstrates and tests the Javascript class: Resizer that can be used to resize divs, text boxes, and iframes vertically.</p><p>There is also a <a href="dialog.html">2D (dialog) test page</a>.</p><form><p class="center"><textarea></textarea></p><p class="center"><textarea></textarea></p></form><div class="iframe"><iframe></iframe></div><div class="example"></div><div id="ex2" class="example2"></div><script>console.log(Resizer);
+    new Resizer('textarea', {
       handle: 'bar',
       grabSize: 10
     });
