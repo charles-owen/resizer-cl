@@ -1,6 +1,6 @@
 {
   "name": "resizer-cl",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Vertical resize support for div, textarea, iframe, etc.",
   "main": "dist/resizer.js",
   "module": "index.js",
